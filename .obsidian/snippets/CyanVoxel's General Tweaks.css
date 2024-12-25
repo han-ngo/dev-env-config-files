@@ -1,0 +1,122 @@
+/* CyanVoxel's General Tweaks */
+
+:root {
+  --mia-light-pink: #ffb3e6;
+  --mia-pale-yellow: #f3ffb3;
+  --mia-pale-cyan: #b3e6ff;
+  --mia-soft-green: #b3ffd9;
+  --mia-light--bg: #171615;
+  --mia-soft-purple: #d9b3ff;
+}
+
+.theme-light,
+.theme-dark {
+  --link-decoration: none;
+  --metadata-label-text-color: var(--mia-soft-green);
+  --tag-color: var(--mia-soft-green);
+  --link-color: var(--mia-pale-yellow);
+  --link-external-color: var(--mia-pale-cyan);
+  --link-unresolved-color: var(--mia-light-pink);
+  --link-color-hover: var(--mia-pale-yellow);
+  --metadata-input-text-color: var(--mia-soft-green);
+}
+
+h1 {
+  margin-top: 20px !important;
+}
+
+:is(h1, .HyperMD-header.HyperMD-header-1) {
+  text-align: center;
+  color: var(--mia-soft-green);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+:is(h2, .HyperMD-header.HyperMD-header-2) {
+  text-align: center;
+  color: var(--mia-soft-purple);
+}
+
+:is(h3, .HyperMD-header.HyperMD-header-3) {
+  color: var(--mia-light-pink);
+}
+
+:is(h4, .HyperMD-header.HyperMD-header-4) {
+  color: var(--mia-pale-cyan);
+}
+
+:is(h5, .HyperMD-header.HyperMD-header-5) {
+  color: var(--mia-pale-yellow);
+}
+
+hr {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.image-borders img {
+  border: solid;
+  /* border-width: 1em; */
+  border-width: 2px;
+  /* border-radius: 6px; */
+  border-color: rgba(122, 122, 122, 0.2);
+}
+
+.markdown-preview-view img {
+  max-width: 100%;
+}
+
+img {
+  max-width: 100%;
+  border-radius: 6px;
+}
+
+.callout {
+  border-radius: 12px;
+  border-width: 2px;
+}
+
+.task-list-item-checkbox {
+  border-width: 2px;
+}
+
+#calendar-container .title {
+  font-size: 18px;
+}
+
+.center-images img {
+  display: block !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.no-embed-border {
+  --embed-border-left: 0px solid black !important;
+}
+
+/* .markdown-preview-view */
+.markdown-preview-view {
+  border-radius: 6px;
+}
+
+.center-titles
+  :is(
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    .HyperMD-header.HyperMD-header-1,
+    .HyperMD-header.HyperMD-header-2,
+    .HyperMD-header.HyperMD-header-3,
+    .HyperMD-header.HyperMD-header-4,
+    .HyperMD-header.HyperMD-header-5,
+    .HyperMD-header.HyperMD-header-6
+  ) {
+  text-align: center;
+}
+
+code {
+  font-family: "JetBrainsMono Nerd Font Mono", monospace;
+}
