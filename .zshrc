@@ -1,14 +1,34 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
+
+## ALIAS ##
+
+# git
 alias gstt="git status"
 alias gdif="git diff"
 alias ga="git add"
 alias gcm="git commit -m"
+
+# path
 alias cdGH="cd Documents/GitHub"
+
+# conda
 alias py36_start="conda activate py36"
 alias conda_end="conda deactivate"
 
+# tmux
+alias tmnew="tmux new -s"
+alias tmkill="tmux kill-session -t"
+alias tmkilla="tmux kill-session -a"
+alias tmls="tmux ls"
+alias tmat="tmux attach -t"
+
+## END ALIAS ##
+
+
+
+## ZSH ##
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
@@ -111,6 +131,13 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+
+## END ZSH ##
+
+
+
+## CONDA ##
+
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
 __conda_setup="$('/Users/miango/opt/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
@@ -127,6 +154,10 @@ unset __conda_setup
 # <<< conda initialize <<<
 
 
+## END CONDA ##
+
+
+
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
@@ -140,7 +171,7 @@ export NVM_DIR="$HOME/.nvm"
 #setopt hist_ignore_dups
 #setopt hist_verify
 
-#source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # config for eza (better ls)
